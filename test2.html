@@ -2,9 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>sibling and relationships</title>
+    <style type="text/css">
+    a+p{
+
+        color: #cc0000;
+    }
+
+    h1.blue{
+
+        color: blue;
+    }
+    h1.blue~a{
+
+        color: aquamarine;
+    }
+    #test > p{
+
+        color: sienna;
+
+    }
+
+    </style>
 </head>
 <body>
-$END$
+
+<div id="test">
+    <h1 class="blue">this is a blue header</h1>
+    <a href="http://yallacora.com">go to yalla kora</a>
+
+    <p> this is paragraph in (test div) </p>
+
+    <div id="inaarchiled">
+        <p>this is paragraph in (inaarchiled)</p>
+        <p> this is paragraph in (inaarchiled)</p>
+        <p> this is paragraph in (inaarchiled)</p>
+    </div>
+
+
+
+
+    <p> this is paragraph in (test div) </p>
+    <p> this is paragraph in (test div)</p>
+    <p> this is paragraph in (test div)</p>
+    <p> this is paragraph in (test div)</p>
+
+
+
+
+</div>
+
+
+
 </body>
 </html>

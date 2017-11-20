@@ -6,6 +6,11 @@ body,p,h1,h2,h3,h4,h5,h6,div,ul,li,form,ol {
 body{
 
     background-color:#e4e4e4;
+    background-image: url("../images/3132.jpg");
+    width: 1100px;
+    height: 1000px;
+    background-attachment: fixed;
+    background-position: center center ;
 }
 
 
@@ -118,7 +123,7 @@ div#wrapper div#banner div#bannerlabl1 p{
 }
 
 div#wrapper div#body-container {
-    min-height: 400px;
+    min-height: 800px;
 background-color: azure;
 }
 div#body-container div#sid-bar{

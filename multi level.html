@@ -2,9 +2,141 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>multi level</title>
+    <style type="text/css">
+    body,ul,ol,li{
+
+        margin: 0;
+        padding: 0;
+
+    }
+
+ul,ol{
+
+    list-style: none;
+}
+
+#nav{
+    width: 1000px;
+    margin: 0 auto;
+}
+#nav li{
+    float: left;
+    position: relative;
+
+}
+
+
+    #nav li  a:link, nav li a:visited{
+
+        display: block;
+        background-color: slategray;
+        color: #fffdfe;
+        text-decoration: none;
+        text-transform:uppercase;
+
+        font-size: 0.75em;
+        font-family: "Courier New";
+        padding: 10px;
+        width: 169px;
+        border-right: solid 1px #ccc;
+        text-align: center;
+        border-bottom: solid 3px #f90;
+
+    }
+
+    #nav li  a:hover, nav li a:active {
+        background-color: #ff9900;
+        border-right: solid 1px #ff9900;
+    }
+    #nav li ul li {
+
+        float: none;
+
+    }
+    #nav li ul {
+
+        display: none;
+        position: absolute;
+    }
+    #nav li:hover > ul {
+        display: block;
+    }
+
+    #nav li ul li a:link, #nav li ul li a:visited{
+
+        border-right: none;
+    }
+
+
+    #nav li ul li ul{
+
+        top:0px;
+        left: 190px;
+        border: solid 1px #666;
+
+    }
+    </style>
+
+
+
+
+
 </head>
 <body>
-$END$
+<ul id="nav">
+
+    <li><a href="index.html">home</a></li>
+    <li><a href="about.html">about</a></li>
+    <li><a href="contact.html">contact us</a></li>
+    <li>
+
+
+        <a href="servises.html">servises</a>
+    <ul>
+
+        <li><a href="servis1.html">servis1</a> </li>
+
+
+
+        <li>
+
+
+            <a href="servis2.html">servis2</a>
+
+            <ul>
+                <a href="servis2.html">servis2-A</a>
+                <a href="servis2.html">servis2-B</a>
+                <a href="servis2.html">servis2-C</a>
+                <a href="servis2.html">servis2-D</a>
+
+
+
+            </ul>
+
+
+        </li>
+
+
+
+
+        <li><a href="servis3.html">servis3</a> </li>
+        <li><a href="servis4.html">servis4</a> </li>
+
+
+
+    </ul>
+
+
+
+    </li>
+    <li><a href="gallary.html">gallary</a></li>
+
+
+
+
+
+
+</ul>
 </body>
 </html>
